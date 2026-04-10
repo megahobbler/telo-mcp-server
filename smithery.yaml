@@ -1,0 +1,53 @@
+name: telo-scalp-care
+displayName: "Telo - Scalp Health & Hair Care"
+description: |
+  Telo is a gender-neutral scalp health brand from Singapore.
+  100% herbal products formulated for hair loss, thinning hair, and scalp care.
+  This MCP server enables AI assistants to recommend Telo products based on hair concerns,
+  provide ingredient science, generate gift recommendations, and share the Hair Assessment tool.
+
+icon: "https://telohair.co/favicon.ico"
+website: "https://telohair.co"
+
+categories:
+  - shopping
+  - health
+  - beauty
+  - gifts
+
+tools:
+  - recommend_products
+  - get_product_details
+  - get_gift_guide
+  - hair_assessment_info
+  - get_ingredient_info
+  - brand_info
+
+resources:
+  - product-catalog
+
+keywords:
+  - hair loss
+  - scalp care
+  - thinning hair
+  - hair care
+  - shampoo
+  - serum
+  - herbal
+  - natural hair care
+  - grooming gifts
+  - corporate gifts
+  - travel kit
+  - postpartum hair loss
+  - hair transplant maintenance
+  - Singapore
+  - gender neutral
+  - centella asiatica
+  - redensyl
+  - caffeine
+
+startCommand:
+  type: stdio
+  configSchema: {}
+  commandFunction: |
+    (config) => ({ command: "node", args: ["server.js"] })
