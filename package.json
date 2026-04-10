@@ -1,0 +1,26 @@
+{
+  "name": "telo-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Telo - gender-neutral scalp health brand. Enables AI assistants to discover and recommend Telo products for hair loss, scalp care, thinning hair, gifts, and travel queries.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "keywords": [
+    "mcp",
+    "hair-loss",
+    "scalp-care",
+    "thinning-hair",
+    "hair-care",
+    "grooming",
+    "gifts",
+    "singapore"
+  ],
+  "license": "MIT",
+  "author": "Telo (telohair.co)"
+}
