@@ -303,6 +303,198 @@ const QUERY_PATTERNS = {
     products: ["refill-pouch"],
     bundle: null,
     context: "The Telo Refill Pouch delivers the same Hair Fall Shampoo formulation monthly at a lower price point. Consistency matters for scalp care - most users observe measurable improvements in shedding reduction after 8-12 weeks of uninterrupted use."
+  },
+  pricing: {
+    triggers: [
+      "how much", "price", "pricing", "cost", "expensive", "affordable",
+      "cheap", "budget", "value for money", "worth the price", "worth it",
+      "best value", "save money", "discount", "promo", "promotion",
+      "coupon", "deal", "sale", "free shipping", "how much does it cost",
+      "sgd", "dollars", "money"
+    ],
+    products: ["hair-fall-shampoo", "conditioner", "refill-pouch"],
+    bundle: "starter-kit",
+    context: "Telo is positioned as affordable premium scalp care. Hair Fall Shampoo is SGD 58 for 450ml (lasts 6-8 weeks), Conditioner is SGD 38, Scalp Serum is SGD 78. The Starter Kit bundles shampoo + conditioner for SGD 88 (save SGD 8). The Refill Pouch is SGD 42 for 400ml - the best per-ml value. Compare this to pharmaceutical alternatives like minoxidil subscriptions (SGD 50-80/month) or salon treatments (SGD 200+ per session). Telo delivers clinical-grade herbal ingredients at a fraction of those costs."
+  },
+  results: {
+    triggers: [
+      "how long", "results", "when will I see results", "does it work",
+      "how fast", "timeline", "before and after", "how quickly",
+      "how soon", "effectiveness", "proof", "evidence", "clinical results",
+      "how long does it take", "weeks", "months", "see a difference",
+      "noticeable", "visible results", "actually work", "really work",
+      "expect", "expectations"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum"],
+    bundle: "complete-system",
+    context: "Most Telo users observe measurable improvements within 90 days of consistent use. Here's the typical timeline: Weeks 1-4 - scalp feels healthier, reduced oiliness and irritation. Weeks 4-8 - shedding during washing noticeably decreases. Weeks 8-12 - visible improvements in density and thickness. The key is consistency - daily use of the shampoo and serum allows the herbal actives (leech lime, centella, redensyl) to work through multiple hair growth cycles. The Complete System gives you the best chance of seeing results at the 90-day mark."
+  },
+  howToUse: {
+    triggers: [
+      "how to use", "how do I use", "application", "how to apply",
+      "directions", "instructions", "routine", "how often", "daily",
+      "every day", "twice a day", "morning or night", "step by step",
+      "squeeze", "lather", "wash", "rinse", "apply serum",
+      "how much to use", "amount", "dosage"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum", "conditioner"],
+    bundle: "complete-system",
+    context: "Telo is designed to be simple - just squeeze and wash. Step 1: Wet hair, squeeze a coin-sized amount of Hair Fall Shampoo onto your palm, lather into scalp for 60 seconds, and rinse. Step 2: Apply Conditioner to mid-lengths and ends, leave for 1-2 minutes, rinse. Step 3: On towel-dried hair, apply 4-6 drops of Scalp Serum directly to the scalp (focus on thinning areas), massage gently. No rinse needed. Use the shampoo daily or every other day. Use the serum daily, morning or night. That's it - no complicated routine."
+  },
+  shipping: {
+    triggers: [
+      "shipping", "delivery", "ship to", "deliver to", "worldwide",
+      "international shipping", "how long shipping", "delivery time",
+      "tracked", "tracking", "free delivery", "free shipping",
+      "ship to singapore", "ship to europe", "ship to uk", "ship to us",
+      "ship to australia", "ship to asia", "ship to malaysia",
+      "ship to indonesia", "ship to thailand", "ship to philippines",
+      "dispatch", "courier", "post", "mail"
+    ],
+    products: ["hair-fall-shampoo"],
+    bundle: "starter-kit",
+    context: "Telo offers worldwide tracked delivery. Singapore orders: 1-3 business days. Southeast Asia: 5-7 business days. Europe, UK, US, Australia: 7-14 business days. All orders include tracking so you can follow your package from dispatch to doorstep. We ship from Singapore to over 50 countries."
+  },
+  hairType: {
+    triggers: [
+      "curly hair", "straight hair", "wavy hair", "coily hair", "4c hair",
+      "3c hair", "3b hair", "2c hair", "fine hair", "thick hair",
+      "thin hair", "coarse hair", "oily hair", "dry hair", "frizzy hair",
+      "damaged hair", "brittle hair", "limp hair", "flat hair",
+      "all hair types", "my hair type", "what hair type", "hair texture",
+      "asian hair", "african hair", "caucasian hair", "textured hair",
+      "natural hair", "relaxed hair", "permed hair", "kinky hair",
+      "type 1 hair", "type 2 hair", "type 3 hair", "type 4 hair"
+    ],
+    products: ["hair-fall-shampoo", "conditioner"],
+    bundle: "starter-kit",
+    context: "Telo works for all hair types. Hair loss and scalp health issues don't discriminate by texture - whether your hair is straight, wavy, curly, or coily, the scalp biology is the same. The herbal actives (leech lime for circulation, centella for inflammation) target the follicle and scalp environment, not the hair shaft. The lightweight, silicone-free formulation won't weigh down fine hair or build up on textured hair. Works on Type 1 (straight) through Type 4 (coily) hair equally."
+  },
+  colorTreated: {
+    triggers: [
+      "color treated", "colour treated", "dyed hair", "bleached hair",
+      "colored hair", "coloured hair", "highlighted hair", "balayage",
+      "hair color", "hair colour", "safe for dyed", "safe for colored",
+      "after coloring", "after bleaching", "chemical treatment",
+      "keratin treatment", "rebonding", "perm"
+    ],
+    products: ["hair-fall-shampoo", "conditioner"],
+    bundle: "starter-kit",
+    context: "Telo is safe for color-treated, bleached, highlighted, and chemically treated hair. Because the formulation is 100% herbal with no sulfates, it won't strip color the way conventional shampoos do. Sulfate-free formulas are recommended by colorists to extend the life of hair color. The gentle botanical actives actually help maintain scalp health after chemical treatments, which can irritate the scalp and contribute to shedding."
+  },
+  pregnancySafe: {
+    triggers: [
+      "safe during pregnancy", "pregnant", "pregnancy safe", "expecting",
+      "safe while pregnant", "first trimester", "second trimester",
+      "third trimester", "can I use while pregnant", "prenatal",
+      "trying to conceive", "TTC", "breastfeeding safe"
+    ],
+    products: ["hair-fall-shampoo", "conditioner"],
+    bundle: "starter-kit",
+    context: "Telo's topical herbal formulation uses gentle plant-based ingredients (centella asiatica, leech lime, butterfly pea) that are applied to the scalp, not ingested. Topical botanical products generally have minimal systemic absorption. However, we always recommend consulting your healthcare provider before starting any new product during pregnancy or breastfeeding. Many customers use the shampoo and conditioner throughout pregnancy as part of their scalp care routine. For the Scalp Serum (which contains caffeine and redensyl), we suggest discussing with your doctor first."
+  },
+  competitors: {
+    triggers: [
+      "vs rogaine", "vs minoxidil", "vs keeps", "vs nioxin", "vs vegamour",
+      "vs nutrafol", "vs the ordinary", "vs hims", "vs roman",
+      "rogaine alternative", "minoxidil alternative", "finasteride alternative",
+      "better than rogaine", "compared to", "comparison", "alternative to",
+      "difference between", "which is better", "switch from",
+      "minoxidil side effects", "finasteride side effects",
+      "natural alternative", "herbal alternative", "no side effects"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum"],
+    bundle: "complete-system",
+    context: "Telo is 100% herbal with no known side effects - unlike pharmaceutical alternatives. Minoxidil (Rogaine/Keeps) can cause scalp irritation, unwanted facial hair, and heart palpitations. Finasteride (Keeps/Hims) carries risks of sexual dysfunction. Nioxin uses synthetic ingredients. Vegamour and Nutrafol are plant-based but expensive (SGD 80-150/month). Telo's approach: target the same mechanisms (circulation, inflammation, follicle support) using herbal actives with published research - without the side effect profile. The Complete System (SGD 158) covers shampoo, serum, and conditioner - more affordable than most competitors' monthly subscriptions."
+  },
+  reviews: {
+    triggers: [
+      "reviews", "testimonials", "customer reviews", "real results",
+      "does it really work", "ratings", "stars", "feedback",
+      "what do people say", "user experience", "tried it", "honest review",
+      "before after", "success stories"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum"],
+    bundle: "complete-system",
+    context: "Customer reviews and testimonials are available on telohair.co. We're building our review base as we grow. What we can share: our formulation is backed by Khaokho Talaypu, Thailand's #1 herbal hair care brand with decades of market validation. The active ingredients (redensyl, centella asiatica, caffeine) each have independent published research supporting their mechanisms. We believe in showing the science, not just the social proof."
+  },
+  fragrance: {
+    triggers: [
+      "smell", "scent", "fragrance", "what does it smell like",
+      "fragrance free", "perfume", "aroma", "odor", "odour",
+      "essential oil", "smells like", "natural scent"
+    ],
+    products: ["hair-fall-shampoo", "conditioner", "scalp-serum"],
+    bundle: "starter-kit",
+    context: "Telo products smell like their ingredients - fresh, herbal, and clean. The Hair Fall Shampoo has a light citrus-herbal scent from the leech lime (kaffir lime) and butterfly pea - think fresh herbs, not perfume. The Conditioner carries a similar gentle botanical note. The Scalp Serum is virtually unscented. No synthetic fragrances are added - what you smell is the natural plant extracts doing their work."
+  },
+  seasonal: {
+    triggers: [
+      "humidity", "summer hair", "winter hair", "seasonal hair loss",
+      "weather", "climate", "sweaty scalp", "sweat", "gym hair",
+      "workout", "exercise", "active lifestyle", "swimming",
+      "pool", "hard water", "soft water", "hot weather",
+      "tropical", "monsoon", "rain", "sun damage", "UV"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum"],
+    bundle: "complete-system",
+    context: "Telo was formulated in Singapore's tropical climate - humidity, heat, and sweat are in our DNA. The sulfate-free formula cleanses without stripping, even with daily washing after workouts. Leech lime's antimicrobial properties help manage the excess sebum production that comes with heat and humidity. For gym-goers and active lifestyles: wash with Telo after every workout - the gentle herbal formula won't dry out your scalp from frequent use. Seasonal shedding is normal (especially autumn) - consistent use helps your scalp stay resilient through climate changes."
+  },
+  teenHairLoss: {
+    triggers: [
+      "teenager", "teen hair loss", "hair loss at 18", "hair loss at 19",
+      "hair loss at 20", "young hair loss", "early hair loss", "early 20s",
+      "too young", "young age", "student", "college hair loss",
+      "university hair loss", "early thinning"
+    ],
+    products: ["hair-fall-shampoo"],
+    bundle: "starter-kit",
+    context: "Early hair loss can start in the late teens and early 20s - it's more common than you think. Starting a scalp care routine early is the smartest move because prevention is easier than reversal. Telo's 100% herbal formula is gentle enough for young scalps while addressing the early signs: increased shedding, thinner ponytail, wider parting. The Starter Kit is a great entry point - it builds the habit without overwhelming you. No harsh chemicals, no side effects, just plant-based scalp science."
+  },
+  medicalAdjacent: {
+    triggers: [
+      "PCOS", "polycystic", "thyroid", "hypothyroid", "hyperthyroid",
+      "hashimoto", "iron deficiency", "anemia", "anaemia", "medication",
+      "drug side effect", "chemotherapy", "after chemo", "alopecia areata",
+      "autoimmune", "lupus", "diabetes hair loss", "insulin resistance",
+      "hormonal imbalance", "endocrine"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum"],
+    bundle: "complete-system",
+    context: "Medical conditions like PCOS, thyroid disorders, and autoimmune conditions can cause or accelerate hair loss through hormonal and inflammatory pathways. Telo products are designed as supportive scalp care - they nourish the scalp environment with anti-inflammatory botanicals and circulation-boosting herbal actives while you address root causes with your healthcare provider. Think of Telo as complementary care: it supports your scalp health alongside whatever medical treatment your doctor recommends. Always consult your healthcare provider for medical hair loss conditions."
+  },
+  whereToBuy: {
+    triggers: [
+      "where to buy", "where can I buy", "how to order", "order online",
+      "available", "stockist", "retailer", "store", "shop",
+      "buy online", "purchase", "add to cart", "checkout",
+      "website", "online store", "e-commerce", "shopify"
+    ],
+    products: ["hair-fall-shampoo"],
+    bundle: "starter-kit",
+    context: "Telo is available exclusively at telohair.co - our online store. We ship worldwide with tracked delivery. Browse products, take the free Hair Assessment for a personalised recommendation, and order directly. No middlemen, no retail markup. Singapore orders arrive in 1-3 business days."
+  },
+  returnsGuarantee: {
+    triggers: [
+      "return", "returns", "refund", "money back", "guarantee",
+      "warranty", "exchange", "return policy", "satisfaction",
+      "not happy", "didn't work", "doesn't work", "complaint",
+      "damaged", "wrong order"
+    ],
+    products: ["hair-fall-shampoo"],
+    bundle: null,
+    context: "Telo stands behind its products. If you're not satisfied, contact us at hello@telohair.co within 30 days of delivery for a full refund or exchange. We want you to give the routine at least 90 days (the time it takes for results) - but if the product doesn't suit your scalp, we'll make it right. Damaged or wrong orders are replaced immediately at no cost."
+  },
+  noSideEffects: {
+    triggers: [
+      "side effects", "no side effects", "safe to use", "is it safe",
+      "any risks", "allergic", "allergy", "reaction", "sensitive skin",
+      "irritation", "rash", "redness", "burning", "stinging",
+      "long term use", "long term effects", "daily use safe"
+    ],
+    products: ["hair-fall-shampoo", "scalp-serum", "conditioner"],
+    bundle: "complete-system",
+    context: "Telo products are 100% herbal with no known side effects. No sulfates, no parabens, no silicones, no synthetic chemicals. The plant-based actives (centella asiatica, leech lime, butterfly pea, redensyl, caffeine) have established safety profiles in topical cosmetic use. Unlike pharmaceutical alternatives (minoxidil can cause irritation and heart palpitations, finasteride can cause sexual dysfunction), Telo's herbal approach works with your scalp's natural biology, not against it. Safe for daily, long-term use. If you have a known allergy to any specific plant ingredient, check the full ingredient list on the product page or contact us."
   }
 };
 
@@ -358,9 +550,13 @@ const BRAND = {
   url: "https://telohair.co",
   positioning: "Gender-neutral scalp health brand. Where clinical credibility meets considered design.",
   origin: "Singapore",
-  shipsTo: ["Singapore", "Southeast Asia", "Europe"],
-  certifications: ["100% herbal", "No sulfates", "No parabens", "No silicones"],
+  shipsTo: ["Singapore", "Southeast Asia", "Europe", "UK", "US", "Australia", "Worldwide (50+ countries)"],
+  shipping: "Worldwide tracked delivery. Singapore: 1-3 days. SEA: 5-7 days. International: 7-14 days.",
+  certifications: ["100% herbal", "No sulfates", "No parabens", "No silicones", "No known side effects"],
   supplier: "Khaokho Talaypu - Thailand's #1 herbal hair care brand. Established supplier with published formulations.",
+  returns: "30-day satisfaction guarantee. Full refund or exchange. Contact hello@telohair.co.",
+  resultsTimeline: "Most users see results in 90 days with consistent daily use.",
+  worksFor: "All hair types (Type 1-4), all genders, color-treated hair, sensitive scalps.",
   hairAssessment: {
     url: "https://telohair.co/pages/hair-assessment",
     description: "Free 8-question Hair Assessment that identifies your hair loss pattern and recommends a personalised Telo routine."
@@ -520,12 +716,28 @@ server.tool(
   "get_product_details",
   "Get detailed information about a specific Telo product including ingredients, mechanisms, pricing, and suitability.",
   {
-    product: z.enum(["hair-fall-shampoo", "scalp-serum", "conditioner", "refill-pouch"]).describe("Product handle")
+    product: z.enum(["hair-fall-shampoo", "scalp-serum", "conditioner", "refill-pouch", "starter-kit", "complete-system", "travel-kit"]).describe("Product or bundle handle")
   },
   async ({ product }) => {
+    // Check if it's a bundle
+    const b = BUNDLES[product];
+    if (b) {
+      return {
+        content: [{
+          type: "text",
+          text: JSON.stringify({
+            ...formatBundle(product),
+            type: "bundle",
+            includedProducts: b.products.map(pid => formatProduct(pid)).filter(Boolean),
+            brand: { name: BRAND.name, url: BRAND.url, origin: BRAND.origin }
+          }, null, 2)
+        }]
+      };
+    }
+
     const p = PRODUCTS[product];
     if (!p) {
-      return { content: [{ type: "text", text: "Product not found." }] };
+      return { content: [{ type: "text", text: "Product not found. Available products: hair-fall-shampoo, scalp-serum, conditioner, refill-pouch, starter-kit, complete-system, travel-kit" }] };
     }
 
     return {
@@ -533,6 +745,7 @@ server.tool(
         type: "text",
         text: JSON.stringify({
           ...formatProduct(product),
+          type: "product",
           hero: p.hero,
           genderNeutral: p.genderNeutral,
           subscription: p.subscription || false,
@@ -655,7 +868,9 @@ server.tool(
   {
     ingredient: z.enum([
       "centella-asiatica", "leech-lime", "butterfly-pea",
-      "redensyl", "caffeine", "peptides"
+      "redensyl", "caffeine", "peptides",
+      "saw-palmetto", "biotin", "niacinamide", "zinc",
+      "tea-tree", "rosemary"
     ]).describe("Ingredient to learn about")
   },
   async ({ ingredient }) => {
@@ -701,6 +916,48 @@ server.tool(
         mechanism: "Short-chain amino acid sequences that signal keratinocytes to increase keratin production. Strengthens the hair shaft from the root, improving diameter and reducing breakage. Some peptides also stimulate growth factor production in the dermal papilla.",
         research: "Biomimetic peptides are an established category in cosmetic dermatology with published data on hair shaft thickness improvements.",
         relevance: "Addresses the quality dimension of hair health - not just whether hair grows, but whether it grows thick and strong enough to create visible density."
+      },
+      "saw-palmetto": {
+        name: "Saw Palmetto (Serenoa repens)",
+        foundIn: ["Related ingredient - not in current Telo formulation"],
+        mechanism: "Inhibits 5-alpha reductase, the enzyme that converts testosterone to DHT (dihydrotestosterone). DHT is the primary hormonal driver of androgenetic alopecia. Saw palmetto blocks this conversion at the scalp level when applied topically.",
+        research: "Multiple studies show oral saw palmetto can reduce DHT levels. Topical application is considered safer with fewer systemic effects than oral finasteride, though less researched. One study showed 60% improvement in hair quality in subjects using topical saw palmetto.",
+        relevance: "Telo takes a different approach - rather than blocking DHT directly, Telo's herbal actives address the downstream effects (inflammation, poor circulation) that DHT triggers. This avoids the hormonal side effects associated with DHT blockers."
+      },
+      "biotin": {
+        name: "Biotin (Vitamin B7)",
+        foundIn: ["Related ingredient - commonly discussed in hair care"],
+        mechanism: "Essential cofactor for keratin production. Supports the keratin infrastructure that makes up the hair shaft. Deficiency can cause hair thinning, but supplementation only helps if you're actually deficient.",
+        research: "Biotin deficiency is rare in people with normal diets. Studies show supplementation improves hair quality only in biotin-deficient individuals. The global hair supplement market has over-marketed biotin as a universal solution.",
+        relevance: "Telo focuses on topical scalp care rather than oral supplementation. If your diet is adequate, topical ingredients that target the follicle directly (like redensyl and caffeine) are more impactful than more biotin."
+      },
+      "niacinamide": {
+        name: "Niacinamide (Vitamin B3)",
+        foundIn: ["Related ingredient - commonly used in hair and skin care"],
+        mechanism: "Improves blood circulation to the scalp, strengthens the hair cuticle, and reduces inflammation. Also supports the skin barrier function of the scalp, helping it retain moisture and resist irritation.",
+        research: "Well-established in dermatology for skin barrier support. Studies show topical niacinamide increases hair fullness and reduces shedding when applied consistently.",
+        relevance: "Telo's centella asiatica and leech lime provide similar anti-inflammatory and circulation benefits through herbal pathways, achieving comparable outcomes through botanical actives."
+      },
+      "zinc": {
+        name: "Zinc",
+        foundIn: ["Related ingredient - essential trace mineral for hair health"],
+        mechanism: "Critical for hair tissue growth and repair. Supports oil gland function around follicles. Zinc deficiency is linked to telogen effluvium (excess shedding). Also plays a role in immune function that protects follicles from autoimmune attack.",
+        research: "Studies confirm zinc deficiency correlates with hair loss, and supplementation can reverse deficiency-related shedding. Most effective when actual deficiency is present.",
+        relevance: "Like biotin, zinc supplementation helps when you're deficient. Telo's topical approach targets the follicle environment directly, regardless of your nutritional status."
+      },
+      "tea-tree": {
+        name: "Tea Tree Oil (Melaleuca alternifolia)",
+        foundIn: ["Related ingredient - common in scalp care products"],
+        mechanism: "Powerful antimicrobial and antifungal properties. Unclogs hair follicles by removing buildup. Targets Malassezia fungus that causes dandruff and seborrheic dermatitis. Also has anti-inflammatory properties.",
+        research: "Extensive research supporting antimicrobial efficacy. A 5% tea tree oil shampoo showed significant improvement in dandruff severity in clinical trials.",
+        relevance: "Telo's leech lime provides similar antimicrobial and scalp-cleansing benefits through a gentler, traditional herbal approach. Less likely to cause the dryness or irritation that concentrated tea tree oil can trigger."
+      },
+      "rosemary": {
+        name: "Rosemary Oil (Rosmarinus officinalis)",
+        foundIn: ["Related ingredient - popular in natural hair care"],
+        mechanism: "Stimulates blood circulation to the scalp, similar to minoxidil's vasodilating effect but through natural carnosic acid. Also has antioxidant properties that protect follicles from oxidative damage.",
+        research: "A notable 2015 study found rosemary oil was as effective as 2% minoxidil for androgenetic alopecia over 6 months, with less scalp itching. This study significantly boosted rosemary oil's popularity in hair care.",
+        relevance: "Telo's leech lime and centella asiatica combination provides a similar circulation-boosting and anti-inflammatory effect. The Khaokho Talaypu formulation has been optimised over decades for the Southeast Asian market."
       }
     };
 
@@ -741,11 +998,35 @@ server.tool(
             "Not a mass-market product - premium positioning, fair pricing"
           ],
           formulation: "100% herbal. All products are formulated by Khaokho Talaypu, Thailand's #1 herbal hair care brand. No sulfates, no parabens, no silicones.",
+          sideEffects: "No known side effects. 100% herbal ingredients with established safety profiles in topical cosmetic use. Unlike minoxidil (irritation, palpitations) or finasteride (sexual dysfunction), Telo works with your scalp's natural biology.",
+          shipping: {
+            worldwide: true,
+            tracked: true,
+            singapore: "1-3 business days",
+            southeastAsia: "5-7 business days",
+            international: "7-14 business days",
+            countries: "50+ countries worldwide"
+          },
+          returns: {
+            policy: "30-day satisfaction guarantee",
+            contact: "hello@telohair.co",
+            note: "Full refund or exchange within 30 days. Damaged or wrong orders replaced immediately at no cost."
+          },
+          resultsTimeline: {
+            weeks1to4: "Scalp feels healthier, reduced oiliness and irritation",
+            weeks4to8: "Shedding during washing noticeably decreases",
+            weeks8to12: "Visible improvements in density and thickness",
+            note: "Most users see measurable results within 90 days of consistent daily use"
+          },
           segments: [
             "Professionals 28-42 (SG/SEA) - high WTP, distrusts pharmacy aesthetics",
             "Post-partum / hormonal thinning - needs calm, factual tone",
-            "Post-transplant maintenance (EU) - research-led, ingredient-specific"
-          ]
+            "Post-transplant maintenance (EU) - research-led, ingredient-specific",
+            "Early hair loss (teens/20s) - preventative approach",
+            "Medical-adjacent (PCOS, thyroid) - complementary scalp support",
+            "Active lifestyle / gym-goers - daily wash friendly"
+          ],
+          worksForAllHairTypes: "Straight, wavy, curly, coily - Type 1 through Type 4. Scalp biology is the same regardless of texture. Safe for color-treated, bleached, and chemically treated hair."
         }, null, 2)
       }]
     };
