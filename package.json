@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "start:http": "MCP_TRANSPORT=http node server.js",
     "dev": "node --watch server.js"
   },
   "dependencies": {
