@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telo-mcp-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: MCP_TRANSPORT=http node server.js
+    envVars:
+      - key: MCP_TRANSPORT
+        value: http
+      - key: PORT
+        value: "10000"
